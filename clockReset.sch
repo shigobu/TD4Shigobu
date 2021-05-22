@@ -135,17 +135,6 @@ F 3 "~" H 2200 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW17
-U 1 1 6067F983
-P 1500 2800
-F 0 "SW17" V 1550 3200 50  0000 R CNN
-F 1 "Manual Clock" V 1650 3400 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR" H 1500 3000 50  0001 C CNN
-F 3 "~" H 1500 3000 50  0001 C CNN
-	1    1500 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R6
 U 1 1 606805DF
 P 2500 4300
@@ -201,29 +190,16 @@ F 3 "~" H 5050 3300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R12
-U 1 1 60685CF4
-P 6100 4300
-F 0 "R12" V 6000 4300 50  0000 C CNN
-F 1 "100" V 6200 4300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6030 4300 50  0001 C CNN
-F 3 "~" H 6100 4300 50  0001 C CNN
-	1    6100 4300
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R11
 U 1 1 60686519
-P 6100 2500
-F 0 "R11" V 6000 2500 50  0000 C CNN
-F 1 "100" V 6200 2500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6030 2500 50  0001 C CNN
-F 3 "~" H 6100 2500 50  0001 C CNN
-	1    6100 2500
+P 8800 3200
+F 0 "R11" V 8700 3200 50  0000 C CNN
+F 1 "100" V 8900 3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8730 3200 50  0001 C CNN
+F 3 "~" H 8800 3200 50  0001 C CNN
+	1    8800 3200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5950 2500 3600 2500
 Wire Wire Line
 	1500 2500 1500 2250
 Wire Wire Line
@@ -243,10 +219,6 @@ Connection ~ 2200 2500
 Wire Wire Line
 	2200 2500 2000 2500
 Wire Wire Line
-	6250 2500 6600 2500
-Wire Wire Line
-	6600 4300 6250 4300
-Wire Wire Line
 	2200 3300 3050 3300
 Wire Wire Line
 	3000 4300 2650 4300
@@ -254,8 +226,6 @@ Wire Wire Line
 	4750 4300 4300 4300
 Wire Wire Line
 	2350 4300 2200 4300
-Wire Wire Line
-	5950 4300 5650 4300
 Wire Wire Line
 	2200 3300 2200 4300
 Wire Wire Line
@@ -366,17 +336,6 @@ F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1430 5150 
 F 3 "~" H 1500 5150 50  0001 C CNN
 	1    1500 5150
 	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW18
-U 1 1 60693454
-P 1500 5850
-F 0 "SW18" V 1546 5802 50  0000 R CNN
-F 1 "Reset" V 1455 5802 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR" H 1500 6050 50  0001 C CNN
-F 3 "~" H 1500 6050 50  0001 C CNN
-	1    1500 5850
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR042
@@ -497,7 +456,7 @@ F 3 "" H 5500 6350 50  0001 C CNN
 	1    5500 6350
 	1    0    0    -1  
 $EndComp
-Text GLabel 8550 3200 2    50   Output ~ 0
+Text GLabel 9050 3200 2    50   Output ~ 0
 CLOCK
 Text GLabel 6000 5500 2    50   Output ~ 0
 RESET
@@ -521,25 +480,10 @@ F 3 "~" H 5250 2000 50  0001 C CNN
 	1    5250 2000
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R14
-U 1 1 60742990
-P 6100 1900
-F 0 "R14" V 6000 1900 50  0000 C CNN
-F 1 "100" V 6200 1900 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6030 1900 50  0001 C CNN
-F 3 "~" H 6100 1900 50  0001 C CNN
-	1    6100 1900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5450 1900 5950 1900
 Wire Wire Line
 	6700 1900 6700 3200
 Wire Wire Line
 	6700 3200 7650 3200
-Wire Wire Line
-	6250 1900 6700 1900
 $Comp
 L power:GND #PWR0103
 U 1 1 60744E26
@@ -714,4 +658,48 @@ Wire Wire Line
 Connection ~ 7450 2050
 Wire Wire Line
 	7450 2050 7600 2050
+Wire Wire Line
+	8550 3200 8650 3200
+Wire Wire Line
+	8950 3200 9050 3200
+Wire Wire Line
+	5450 1900 6700 1900
+Wire Wire Line
+	3600 2500 6600 2500
+Wire Wire Line
+	5650 4300 6600 4300
+$Comp
+L Switch:SW_MEC_5E SW17
+U 1 1 60E13326
+P 1600 2800
+F 0 "SW17" V 1600 3300 50  0000 R CNN
+F 1 "Manual Clock" V 1700 3500 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 1600 3100 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 1600 3100 50  0001 C CNN
+	1    1600 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 2600 1500 2600
+Connection ~ 1500 2600
+Wire Wire Line
+	1600 3000 1500 3000
+Connection ~ 1500 3000
+$Comp
+L Switch:SW_MEC_5E SW18
+U 1 1 60E1D129
+P 1600 5850
+F 0 "SW18" V 1650 5850 50  0000 R CNN
+F 1 "Reset" V 1550 5850 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 1600 6150 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 1600 6150 50  0001 C CNN
+	1    1600 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 5650 1500 5650
+Connection ~ 1500 5650
+Wire Wire Line
+	1600 6050 1500 6050
+Connection ~ 1500 6050
 $EndSCHEMATC
